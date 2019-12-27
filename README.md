@@ -30,6 +30,8 @@
 
 ### Winners:
 
+Users can check their hash using any sha256 complaint program, such as https://emn178.github.io/online-tools/sha256.html
+
 | -                   | sha256 of email                                                  |
 | ------------------- | ---------------------------------------------------------------- |
 | Winner for prize 1  | 719524088f3475b76f8e5672c4f7ea31c55ff5b4d9545c4a432b3208a0532bdc |
