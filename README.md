@@ -6,11 +6,11 @@
 
 1 - A SHA256 hash was generated from each participant’s email address.
 
-2 - The email hashes of all participants was collected into a list.If a participant had N valid tickets for the giveaway draw, N copies of their email hash was included in the list.
+2 - The email hashes of all participants was collected into a list. If a participant had N valid tickets for the giveaway draw, N copies of their email hash was included in the list.
 
-3 - This list was then be sorted lexicographically.
+3 - This list was then sorted lexicographically.
 
-4 - Each of the thirty-four prizes was be assigned a code (a “salt”). For each prize, the salt was combined with the hash of the first Bitcoin block to be mined after 18:00 UTC on 26 December 2019. The combination of prize salt and blockhash yields a large integer that is used to determine the winner.
+4 - Each of the thirty-four prizes was assigned a code (a “salt”). For each prize, the salt was combined with the hash of the first Bitcoin block to be mined after 18:00 UTC on 26 December 2019. The combination of prize salt and blockhash yields a large integer that is used to determine the winner.
 
 5 - For each prize, this large integer is divided modulo T, where T is the total number of valid tickets for the draw. The resulting number gives a position in the sorted list of participants’ email hashes, which corresponds to the winner of the prize.
 
