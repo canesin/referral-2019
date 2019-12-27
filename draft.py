@@ -61,8 +61,10 @@ try:
     users = open('secret_list.csv', 'r').read().splitlines()
     for prize, winner in enumerate(winners):
         for user in users:
-            _, email, _ = user.split(',', maxsplit=2)
+            _, email, name, _ = user.split(',')
+            fist_name = name.split()[0]
             if hashlib.sha256(email.encode('utf-8')).hexdigest() == winner:
-                 print("Winner for prize {}: {}, {}".format(prize + 1, email , winner))
+                print("| Winner for prize {} | {} | {} |".format(prize + 1, fist_name , winner))
+                print("Winner for prize {}: {}, {}".format(prize + 1, email , winner))
 except:
     pass
